@@ -1,0 +1,23 @@
+{
+  "name": "product-expiry-manager",
+  "private": true,
+  "version": "1.0.0",
+  "description": "本地版产品保质期管理系统",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:local": "LOCAL_SYNC_ENABLED=1 node server.js",
+    "start:proxy": "node proxy-server.js",
+    "start:public": "HOST=127.0.0.1 PORT=3752 node server.js",
+    "deploy:cloud": "bash scripts/deploy-cloud.sh",
+    "check:parity": "bash scripts/check-parity.sh",
+    "restore:backup": "node scripts/restore-from-backup.js",
+    "check": "node --check server.js && node --check db.js && node --check proxy-server.js && node --check scripts/restore-from-backup.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "express": "^5.1.0",
+    "qrcode": "^1.5.4",
+    "xlsx": "^0.18.5"
+  }
+}

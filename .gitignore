@@ -1,0 +1,14 @@
+# Dependencies and local runtime files
+node_modules/
+data/
+config/*.json
+.env
+.env.*
+!.env.example
+*.log
+*.pid
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+coverage/

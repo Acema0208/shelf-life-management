@@ -1,0 +1,5 @@
+{
+  "webhook_url": "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx",
+  "webhook_url_test": "https://open.feishu.cn/open-apis/bot/v2/hook/yyyyyyyy",
+  "enabled": true
+}

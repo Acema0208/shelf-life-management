@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>产品保质期管理</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="/vendor/tailwindcss-cdn.js?v=20260323-1"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'Noto Sans SC', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="min-h-screen bg-[#09090B] text-zinc-100">
+  <div id="root"></div>
+
+  <script>
+    (function () {
+      setTimeout(function () {
+        var root = document.getElementById('root');
+        if (!root || root.children.length > 0) return;
+        root.innerHTML = '<div style="padding:24px;color:#444;font:14px/1.6 system-ui,sans-serif;">页面加载失败，请按 Ctrl/Cmd+Shift+R 强制刷新；若仍为空白，请检查网络或联系我继续排查。</div>';
+      }, 4500);
+    })();
+  </script>
+
+  <script src="/vendor/react.production.min.js"></script>
+  <script src="/vendor/react-dom.production.min.js"></script>
+  <script>window.react = window.React;</script>
+  <script src="/vendor/lucide-react.min.js"></script>
+  <script src="/vendor/babel.min.js"></script>
+  <script type="text/babel" data-presets="env,react" src="/js/redesign-app.jsx?v=20260329-59"></script>
+</body>
+</html>
